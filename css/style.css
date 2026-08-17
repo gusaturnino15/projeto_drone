@@ -266,7 +266,7 @@ nav {
 .depoimento-p {
     font-size: 15px;
     line-height: 1.4;
-    margin-bottom: 12p;
+    margin-bottom: 12px;
 }
 
 .depoimento-autor {
@@ -385,178 +385,124 @@ nav {
 }
 
 @media (max-width: 768px) {
-    /* 1. Cabeçalho com logo à esquerda e botão AGENDE à direita */
+    /* 1. CABEÇALHO: Mantém logo e botão AGENDE lado a lado */
     .cabecalho {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 20px;
-        height: auto;
+        position: fixed !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 0 20px !important;
+        height: 65px !important;
     }
 
+    /* Oculta os links de texto do menu, mantendo apenas o botão visível */
     .menu {
-        display: none; /* Esconde o menu de navegação tradicional no mobile */
+        display: flex !important;
+        gap: 0 !important;
     }
 
-    /* Exibe e estiliza o botão AGENDE no topo */
-    .btn-agende {
+    .menu li:not(:has(.btn)),
+    .menu a:not(.btn) {
+        display: none !important;
+    }
+
+    .btn {
         display: inline-block !important;
-        background-color: #00b862;
-        color: #ffffff;
-        padding: 8px 16px;
-        border-radius: 6px;
-        font-weight: bold;
-        font-size: 0.85rem;
-        text-decoration: none;
+        padding: 8px 16px !important;
+        font-size: 0.85rem !important;
     }
 
-    /* 2. Hero e Tipografia */
-    .hero-conteudo {
-        text-align: center;
-        padding: 40px 20px;
-    }
-
+    /* 2. HERO E TEXTOS */
     .hero-conteudo h2 {
-        font-size: 2rem;
-        font-weight: 700;
+        font-size: 2rem !important;
     }
 
     .hero-conteudo p {
-        font-size: 0.95rem;
+        font-size: 1rem !important;
+    }
+
+    .apresentacao {
+        padding: 50px 20px !important;
     }
 
     .apresentacao h2 {
-        font-size: 1.2rem;
-        text-align: center;
+        font-size: 1.3rem !important;
     }
 
-    /* 3. Ícones alinhados na horizontal */
+    /* 3. ÍCONES E BOTÕES LADO A LADO */
     .icones {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        font-size: 0.85rem;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 12px !important;
+        font-size: 0.85rem !important;
     }
 
-    /* 4. Botões de ação lado a lado */
     .botoes {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 10px !important;
     }
 
     .btn-video, .btn-reportagem {
-        width: auto;
-        padding: 10px 16px;
-        font-size: 0.85rem;
-        border-radius: 20px;
+        padding: 8px 14px !important;
+        font-size: 0.85rem !important;
     }
 
-    /* 5. Lista de cards escuros empilhados com linha divisória */
+    /* 4. CARDS PRETOS (EMPILHADOS EM 100% DE LARGURA) */
+    #especificacoes {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
     .card-preto {
-        width: 100%;
-        padding: 24px 20px;
-        border-bottom: 1px solid #2a2a2a;
-        text-align: left;
-        box-sizing: border-box;
+        width: 100% !important;
+        min-height: auto !important;
+        padding: 24px 20px !important;
+        border-bottom: 1px solid #2a2a2a !important;
     }
 
-    .card-preto h3 {
-        font-size: 1.05rem;
-        color: #ffffff;
-        margin-bottom: 6px;
+    /* 5. SEÇÃO DE DEPOIMENTOS */
+    #depoimentos {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+        gap: 20px !important;
     }
 
-    .card-preto p {
-        font-size: 0.85rem;
-        color: #aaaaaa;
+    .foto-perfil {
+        width: 100px !important;
+        height: 100px !important;
     }
 
-    /* 6. Seção de Depoimento (Card com fundo de floresta) */
-    .secao-depoimento {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 20px;
-        gap: 20px;
+    /* 6. FORMULÁRIO (TEXTO ACIMA, CARD BRANCO ABAIXO) */
+    #agende {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+        gap: 25px !important;
     }
 
-    .depoimento-topo {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 15px;
+    .agende-esq {
+        width: 100% !important;
+        text-align: left !important;
     }
 
-    .depoimento-foto {
-        width: 85px;
-        height: 85px;
-        border-radius: 50%;
-        border: 3px solid #ffffff;
-        flex-shrink: 0;
+    .agende-esq h2 {
+        font-size: 1.6rem !important;
     }
 
-    /* 7. Seção Final de Contato + Formulário (Empilhados na vertical) */
-    .secao-contato {
-        display: flex;
-        flex-direction: column; /* Garante que o texto fique ACIMA do formulário */
-        align-items: stretch;
-        padding: 30px 20px;
-        gap: 25px;
+    .agende-esq p {
+        font-size: 0.95rem !important;
     }
 
-    .contato-info {
-        width: 100%;
-        text-align: left;
-    }
-
-    .contato-info h2 {
-        font-size: 1.6rem;
-        line-height: 1.2;
-        margin-bottom: 10px;
-    }
-
-    /* Card do Formulário Branco */
-    .card-formulario {
-        background-color: #ffffff;
-        color: #333333;
-        border-radius: 12px;
-        padding: 24px 20px;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .card-formulario label {
-        display: block;
-        font-size: 0.85rem;
-        margin-top: 10px;
-        color: #555555;
-    }
-
-    .card-formulario input {
-        width: 100%;
-        padding: 10px 12px;
-        border: 1px solid #dddddd;
-        border-radius: 8px;
-        margin-top: 4px;
-        box-sizing: border-box;
-    }
-
-    .card-formulario .btn-agendar {
-        width: 100%;
-        background-color: #00b862;
-        color: #ffffff;
-        padding: 12px;
-        border: none;
-        border-radius: 8px;
-        font-weight: bold;
-        margin-top: 16px;
-        cursor: pointer;
+    .agende-form {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 24px 20px !important;
+        box-sizing: border-box !important;
     }
 }
