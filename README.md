@@ -3,7 +3,6 @@ Desenvolvimento de Sistemas — SESI/SENAI Itapeva.
 
 
 
-| | |
 |---|---|
 |  | Gustavo Saturnino de Camargo Oliveira |
 |  | 2°B |
@@ -19,15 +18,7 @@ agricultor a agendar uma demonstração do produto.
 O layout foi construído a partir de um protótipo no Figma, com HTML semântico e CSS,
 sem frameworks.
 
-> Escreva aqui, com suas palavras, o que você fez neste projeto e o que achou mais
-> difícil. Duas ou três frases bastam — não copie o texto acima.
-
-
-
-
-
-<!-- Exemplo: https://seu-usuario.github.io/landing-page-drone/ -->
-
+Landing page do AgroVant, um drone agrícola fictício para monitoramento e aplicação de defensivos. Desenvolvi o projeto com HTML e CSS seguindo um protótipo do Figma, sendo a responsividade uma das partes mais difíceis.
 
 
 ```
@@ -64,14 +55,14 @@ media queries acrescentam o comportamento das telas maiores, a partir de .
 
 | Tela | Comportamento |
 |---|---|
-| Celular | [descreva: o menu some, os cards empilham...] |
-| Desktop | [descreva: o menu aparece, três cards por linha...] |
+| Celular | O menu de navegação é reduzido, mantendo o botão de agendamento; os cards ficam empilhados; o formulário ocupa praticamente toda a largura da tela; os textos e imagens são reduzidos para melhor adaptação. |
+| Desktop | O menu completo é exibido; os cards de especificações são organizados em três colunas; a seção de depoimentos fica distribuída horizontalmente; o formulário e o conteúdo de agendamento aparecem lado a lado. |
 
 
 
 ```bash
-git clone [https://github.com/gusaturnino15/projeto_drone.git]
-cd [projeto_drone]
+git clone https://github.com/gusaturnino15/projeto_drone.git
+cd projeto_drone
 ```
 
 Depois é só abrir o `index.html` no navegador.
