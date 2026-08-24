@@ -15,15 +15,6 @@ Desenvolvimento de Sistemas — SESI/SENAI Itapeva.
 
 ---
 
-
-
-Landing page de apresentação do , um drone agrícola fictício voltado à
-pulverização e ao monitoramento de lavouras. O objetivo da página é convencer o
-agricultor a agendar uma demonstração do produto.
-
-O layout foi construído a partir de um protótipo no Figma, com HTML semântico e CSS,
-sem frameworks.
-
 Landing page do AgroVant, um drone agrícola fictício para monitoramento e aplicação de defensivos. Desenvolvi o projeto com HTML e CSS seguindo um protótipo do Figma, sendo a responsividade uma das partes mais difíceis.
 
 
