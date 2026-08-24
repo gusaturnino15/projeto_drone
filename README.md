@@ -1,13 +1,19 @@
-Projeto prático da unidade curricular de , do curso Técnico em
+Projeto prático da unidade curricular do SESI CE399 , do curso Técnico em
 Desenvolvimento de Sistemas — SESI/SENAI Itapeva.
 
 
+---
 
-|---|---|
-|  | Gustavo Saturnino de Camargo Oliveira |
-|  | 2°B |
-|  | Rafael Ribas |
-|  | 17/08/2026 |
+## 📌 Informações do Projeto
+
+| Campo | Detalhes |
+| :--- | :--- |
+| **Autor** | Gustavo Saturnino de Camargo Oliveira |
+| **Turma** | 2°B |
+| **Professor** | Rafael Ribas |
+| **Data** | 17/08/2026 |
+
+---
 
 
 
